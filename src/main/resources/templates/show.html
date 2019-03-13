@@ -17,9 +17,9 @@
     <br/>
     Instructor: <span th:text="${course.instructor}"></span>
     <br/>
-    Description: <span th:text="${course.description}"></span>
-    <br/>
+    Description: <p th:text="${course.description}"></p>
     Credit: <span th:text="${course.credit}"></span>
+    <br/>
     <a th:href="@{/delete/{id}(id=${course.id})}">Delete this course</a>
     <br/>
 
